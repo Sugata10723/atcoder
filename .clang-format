@@ -1,0 +1,7 @@
+BasedOnStyle: LLVM        # ベースはLLVM（余計な変更を避ける）
+UseTab: Always            # 必ずタブを使う
+IndentWidth: 4            # インデント単位は4
+TabWidth: 4               # タブ表示幅も4
+ColumnLimit: 0            # 自動で折り返さない
+SortIncludes: false       # include順を変えない
+BreakBeforeBraces: Attach # { を同じ行に置く

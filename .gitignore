@@ -1,41 +1,25 @@
-# Prerequisites
-*.d
+# macOS debug symbol directories
+*.dSYM/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# VS Code temp runner files
+tempCodeRunnerFile
+tempCodeRunnerFile.*
 
-# Precompiled Headers
-*.gch
-*.pch
+# Compiled executables (拡張子なしのバイナリ)
+*/A
+*/B
+*/C
+*/D
+*/test
+*/val
 
-# Linker files
-*.ilk
+# 念のため root 直下のバイナリも
+/A
+/B
+/C
+/D
+/test
+/val
 
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# OSやエディタによる不要ファイル
+.DS_Store
