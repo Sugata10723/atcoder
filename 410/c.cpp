@@ -13,26 +13,26 @@ int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
-	int n, q;
+	ll n, q;
 	cin >> n >> q;
 
-	vector<int> array(n);
-	std::iota(array.begin(), array.end(), 0);
-	int start = 0;
+	vector<ll> array(n);
+	std::iota(array.begin(), array.end(), 1);
+	ll start = 0;
 
 	rep(i, q) {
 		int query;
 		cin >> query;
 		if (query == 1) {
-			int p, x;
+			ll p, x;
 			cin >> p >> x;
-			array[p - 1] = x;
+			array[(start + p - 1) % n] = x;
 		} else if (query == 2) {
-			int p;
+			ll p;
 			cin >> p;
 			cout << array[(start + p - 1) % n] << el;
 		} else if (query == 3) {
-			int k;
+			ll k;
 			cin >> k;
 			start = (start + k) % n;
 		}
