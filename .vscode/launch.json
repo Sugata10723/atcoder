@@ -2,24 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Debug (g++)",
-            "type": "cppdbg",
+            "name": "C++ Debug (CodeLLDB)",
+            "type": "lldb", // ★★★ "cppdbg" から "lldb" に変更 ★★★
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
-            "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/opt/homebrew/bin/gdb",
-            "setupCommands": [
-                {
-                    "description": "gdbのpretty-printingを有効にする",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
             "preLaunchTask": "C/C++: g++-15 build active file"
         }
     ]
